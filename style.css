@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: aqua;
+}
+nav{
+    background-color: black;
+    height: 70px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: "roboto", sans-serif;
+    border: 2px solid aqua;
+}
+nav ul{
+    list-style-type: none;
+}
+.gameContainer{
+    
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.container{
+display: grid;
+grid-template-rows: repeat(3,10vw);
+grid-template-columns: repeat(3,10vw);
+font-family: "roboto", sans-serif;
+position: relative;
+}
+.box{
+    color: aqua;
+    border: 2px solid white;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(125, 243, 243);
+   
+}
+.gameInfo{
+    padding: 0 34px;
+    font-family: "roboto", sans-serif;
+    border: 2px solid aqua;
+}
+
+.gameInfo h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gameInfoPartTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: "roboto", sans-serif; 
+}
+.gameInfoPartTwo span{
+    margin-right: 15px;
+}
+.imgbox{
+    margin-bottom: 20px;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: black;
+    color: aqua;
+    height: 40px;
+    width: 150px;
+   border: 2px solid aqua;
+   margin: 10px 15px;
+   cursor: pointer;
+   border-radius: 10px;
+}
+.line{
+    background-color: red;
+    height: 3px;
+    width: 0;
+    position:absolute;
+    transition: width 0.1s ease-in-out;
+}
